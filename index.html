@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to bottom right, #00c9ff, #92fe9d);
+    }
+
+    .open-button {
+      background-color: #3498db;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="gap-2 flex fixed bottom-0 m-6 z-20">
-    <button class="bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded" onclick="botpress.open()">Open</button>
-    <button class="bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded" onclick="botpress.close()">Close</button>
-    <button class="bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded"
-      onclick="botpress.toggle()">Toggle</button>
-    <button class="bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded"
-      onclick="botpress.config({ configuration: { botName: 'New Webchat Title', botDescription: 'Updated description' } })">Configure</button>
-  </div>
+  <button class="open-button" onclick="botpress.open()">Open PsiQ AI Chat</button>
 
-<script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/ed63d6a2-9cd9-443f-b093-af01c5e2607f/webchat/v2/config.js"></script>
+  <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+  <script src="https://mediafiles.botpress.cloud/ed63d6a2-9cd9-443f-b093-af01c5e2607f/webchat/v2/config.js"></script>
 </body>
 
-</html>
- 
 </html>
